@@ -1,0 +1,33 @@
+
+name: intoto-run
+description: 'Creates Attesttion of CI Process'
+inputs:
+  step-name:
+    description: 'name of the step'
+    required: true
+  command:
+    description: 'Command to run'
+    required: true
+  archivist-url:
+    description: 'URL of archivist'
+    required: true
+  private-key:
+    description: 'Private key to sign attestation'
+    required: true
+  output-directory:
+    description: 'Directory to store the attestation'
+    required: true
+  products:
+    description: 'Paths to expected prouct paths seperated by space'
+    required: false
+  exclude: 
+    description: 'Paths to exclude from recording relative to wd'
+    required: false
+outputs:
+  link-metadata-dir:
+    description: 'Directory containing the link metadata'
+    
+    
+runs:
+  using: 'node16'
+  main: 'index.js'
