@@ -8,7 +8,7 @@ jobs:
     name: test intoto-run
     steps:
       - uses: actions/checkout@v2
-      - uses: testifysec/intoto-run-action@main
+      - uses: in-toto/github-action@main
         name: intoto run command
         with:
           step-name: 'test'

@@ -1,5 +1,5 @@
 
-name: intoto-run
+name: in-toto-run
 description: 'Creates Attesttion of CI Process'
 inputs:
   step-name:
